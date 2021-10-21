@@ -1,12 +1,11 @@
 ﻿using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace history_game
 {
-    public interface IGameElement
+    ///<remarks>every IGameElementIdentifier can be used to look up an object with this interface</remarks>
+    public interface IGameElement : IGameElementIdentifier
     {
-        void QueueMessage(IMessage message);
-        Task ProcessMessages();
-        Task SendMessages(IEnumerable<IGameElement> elements);
+        void Execute(IProcess process);
+        IEnumerator<IProcess> OutgoingProcesses();
     }
 }
