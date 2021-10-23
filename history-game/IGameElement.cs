@@ -6,6 +6,6 @@ namespace history_game
     public interface IGameElement : IGameElementIdentifier
     {
         void Execute(IProcess process);
-        IEnumerator<IProcess> OutgoingProcesses();
+        IEnumerable<IProcess> OutgoingProcesses();
     }
 }
