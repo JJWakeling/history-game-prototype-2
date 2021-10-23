@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace history_game
 {
-    //TODO: make Game also implement IGameElement so that it can be messaged to create new elements
+    //TODO: make Game also implement IGameElementDependant so that it can be messaged to create new elements
     ///<summary>
     /// marshalls game elements to change state in time with a fixed tick rate
     ///</summary>
