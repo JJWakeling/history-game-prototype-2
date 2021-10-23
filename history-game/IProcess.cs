@@ -9,7 +9,7 @@ namespace history_game
         ///<returns>id of element to send process to</returns>
         long ObjectId();
         ///<returns>defines what process does</returns>
-        IVerb Verb();
+        long VerbId();
         ///<returns>ids of elements relevant to the process, but not as subject/object</returns>
         IEnumerable<long> SecondaryObjectIds();
     }

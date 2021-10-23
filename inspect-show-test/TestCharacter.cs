@@ -37,6 +37,7 @@ namespace inspect_show_test
 
         public IEnumerable<IProcess> OutgoingProcesses()
         {
+            //TODO: find way of making this copy process simpler or write one yourself
             var processes = new IProcess[_processesToSend.Count];
             _processesToSend.CopyTo(processes, 0);
             _processesToSend.Clear();

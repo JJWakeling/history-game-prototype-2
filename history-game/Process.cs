@@ -4,14 +4,13 @@ namespace history_game
 {
     public class Process : IProcess
     {
-        private readonly long _subjectId, _objectId;
-        private readonly IVerb _verb;
+        private readonly long _subjectId, _verbId, _objectId;
         private readonly IEnumerable<long> _secondaryObjectIds;
 
-        public Process(long subjectId, IVerb verb, long objectId, IEnumerable<long> secondaryObjectIds)
+        public Process(long subjectId, long verbId, long objectId, IEnumerable<long> secondaryObjectIds)
         {
             _subjectId = subjectId;
-            _verb = verb;
+            _verbId = verbId;
             _objectId = objectId;
             _secondaryObjectIds = secondaryObjectIds;
         }
@@ -31,9 +30,9 @@ namespace history_game
             return _subjectId;
         }
 
-        public IVerb Verb()
+        public long VerbId()
         {
-            return _verb;
+            return _verbId;
         }
     }
 }
