@@ -2,7 +2,7 @@
 
 namespace history_game
 {
-    internal class Process : IProcess
+    public class Process : IProcess
     {
         private readonly long _subjectId, _objectId;
         private readonly IVerb _verb;

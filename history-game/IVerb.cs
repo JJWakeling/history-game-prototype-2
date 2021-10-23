@@ -7,7 +7,7 @@ namespace history_game
     ///</summary>
     public interface IVerb : IGameElementIdentifier
     {
-        bool ValidNextPartOfPhrase(IEnumerable<IType> previousParts, IType nextPart);
-        bool MakesCompletePhrase(IEnumerable<IType> parts);
+        bool ValidNextPartOfPhrase(IEnumerable<ICategory> previousParts, ICategory nextPart);
+        bool MakesCompletePhrase(IEnumerable<ICategory> parts);
     }
 }

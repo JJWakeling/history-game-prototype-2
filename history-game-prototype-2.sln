@@ -3,9 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "history-game.ui", "history-game.ui\history-game.ui.csproj", "{69800349-431B-48E4-8247-1C0CC851427D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "history-game.ui", "history-game.ui\history-game.ui.csproj", "{69800349-431B-48E4-8247-1C0CC851427D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "history-game", "history-game\history-game.csproj", "{EF3A1D5D-2A34-4AA1-BA2F-357063E9853D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "history-game", "history-game\history-game.csproj", "{EF3A1D5D-2A34-4AA1-BA2F-357063E9853D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B2D27D93-639D-4759-81DE-816F05A5809C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "functional", "functional", "{DF85B4EF-33E3-4E0D-8C19-E54872FC591E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "inspect-show-test", "inspect-show-test\inspect-show-test.csproj", "{3499DB57-77DF-453B-A495-F53E677587C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElegantCSharp", "ElegantCSharp\ElegantCSharp.csproj", "{F3E9E4C4-86D7-4DF9-B2E7-05C2834C9B85}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +29,21 @@ Global
 		{EF3A1D5D-2A34-4AA1-BA2F-357063E9853D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF3A1D5D-2A34-4AA1-BA2F-357063E9853D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF3A1D5D-2A34-4AA1-BA2F-357063E9853D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3499DB57-77DF-453B-A495-F53E677587C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3499DB57-77DF-453B-A495-F53E677587C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3499DB57-77DF-453B-A495-F53E677587C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3499DB57-77DF-453B-A495-F53E677587C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3E9E4C4-86D7-4DF9-B2E7-05C2834C9B85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3E9E4C4-86D7-4DF9-B2E7-05C2834C9B85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3E9E4C4-86D7-4DF9-B2E7-05C2834C9B85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3E9E4C4-86D7-4DF9-B2E7-05C2834C9B85}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DF85B4EF-33E3-4E0D-8C19-E54872FC591E} = {B2D27D93-639D-4759-81DE-816F05A5809C}
+		{3499DB57-77DF-453B-A495-F53E677587C5} = {DF85B4EF-33E3-4E0D-8C19-E54872FC591E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1109BFDB-EA2A-41D5-846A-0A79266DB266}
